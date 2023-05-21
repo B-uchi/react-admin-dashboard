@@ -1,0 +1,42 @@
+.transaction-container {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+}
+.transaction-container h3 {
+  margin-bottom: 10px;
+}
+
+table {
+  text-align: left;
+  width: 100%;
+}
+th,
+td {
+  padding: 10px;
+}
+.transaction-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#transaction-status {
+  padding: 3px;
+  border-radius: 10px;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .transaction-container {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .transaction-container {
+    display: none;
+  }
+}
