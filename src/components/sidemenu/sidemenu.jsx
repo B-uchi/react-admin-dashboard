@@ -12,14 +12,26 @@ import {
   BarChart,
   Money,
   Home,
+  Close,
 } from "@mui/icons-material";
 import "./sidemenu.css";
 import { Link } from "react-router-dom";
+import { useRef } from "react";
 
 export const SideMenu = () => {
+  // const ref = useRef(null);
+  // const handleClose = () => {
+  //   const sidemenu = ref.current;
+  //   sidemenu.style.display = "none";
+  // };
   return (
-    <aside>
+    <aside className="side-menu">
       <div className="side-container">
+        {/* <div className="close-btn-wrapper">
+          <button onClick={() => handleClose()} id="close-btn">
+            <Close style={{ color: "red" }} />
+          </button>
+        </div> */}
         <div className="menu-category">
           <h3>Dashboard</h3>
           <ul>
@@ -39,11 +51,11 @@ export const SideMenu = () => {
         <div className="menu-category">
           <h3>Quick Menu</h3>
           <ul>
-            <Link className="navlink" to={"/users"}>
-              <li>
-                <Person /> Users
-              </li>
-            </Link>
+            {/* <Link className="navlink" to={"/users"}> */}
+            <li>
+              <Person /> Users
+            </li>
+            {/* </Link> */}
             <Link className="navlink" to={"/products"}>
               <li>
                 <Store /> Products
